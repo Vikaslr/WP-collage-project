@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                
+                <img src="https://stayeasyltd.com/wp-content/uploads/2020/12/cropped-logo.png" alt="HotelBooking Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#properties">Our Properties</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#" id="loginBtn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search-bar">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search" onkeyup="filterProperties()">
+            <input type="date" id="checkin" placeholder="Check-in Date">
+            <input type="date" id="checkout" placeholder="Check-out Date">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h1>Welcome to HotelBooking</h1>
+            <p>Book your perfect stay with us!</p>
+           
+        </div>
+    </section>
+
+    <!-- Our Properties Section -->
+    <section id="properties">
+    <h2>Our Properties</h2>
+    <div class="property-cards" id="propertyCards">
+        <div class="property-card">
+            <img src="property1.jpg" alt="Property 1">
+            <h3>Compact yet beautiful</h3>
+            <p>Luxury hotel with modern amenities.</p>
+        </div>
+        <div class="property-card">
+            <img src="property2.jpg" alt="Property 2">
+            <h3>Compact yet beautiful</h3>
+            <p>Comfortable and affordable stay.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 3">
+            <h3>Compact yet beautiful</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 4">
+            <h3>Compact yet beautiful</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 5">
+            <h3>Compact yet beautiful</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 6">
+            <h3>Compact yet beautiful</h3>
+            <p>B leachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 7">
+            <h3>Studio room near begur</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 8">
+            <h3>Studio room near begur</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 9">
+            <h3>Studio room near begur</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 10">
+            <h3>Studio room near begur</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 11">
+            <h3>Studio room near begur</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 12">
+            <h3>Studio room near begur</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 13">
+            <h3>Luxirious villa in Akshaynagar</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property14">
+            <h3>Luxirious villa in Akshaynagar</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div> 
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 15">
+            <h3>Luxirious villa in Akshaynagar</h3>
+            <p>Beachfront resort with stunning views.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best hospitality services to our guests.
+            Book your urban retreat today: modern, convenient service apartments designed for your comfort and convenience.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Why choose us?</h2>
+        <p>
+            We’re not just offering a place to stay — we’re delivering a fully curated living experience designed for your utmost comfort and satisfaction
+        </p>
+        <br>
+        <br>
+        <h2>
+            05<br>
+Years of Excellence
+        </h2>
+        <p>
+            
+Pioneering comfort for over a decade,setting benchmarks in luxury living.
+        </p>
+        <br>
+        <br>
+         <h2>
+            120+<br>
+            Properties
+         </h2>
+         <p>Each of our properties meet rigorous quality standards to ensure your utmost comfort.</p>
+         <br>
+         <br>
+         <h2>1000+<br>
+            Happy Customers</h2>
+            <p>Thousands of happy guests,and counting Your satisfaction is what drives us!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HotelBooking. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Popup -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
